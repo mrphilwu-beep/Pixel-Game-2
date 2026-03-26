@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap');
+
+:root {
+  --pixel-bg: #1a1a2e;
+  --pixel-text: #ffffff;
+  --pixel-primary: #e43f5a;
+  --pixel-secondary: #162447;
+  --pixel-accent: #1f4068;
+  --pixel-border: #ffffff;
+  --pixel-shadow: #000000;
+  --pixel-success: #4e8d7c;
+  --pixel-error: #d92027;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', 'DotGothic16', monospace;
+  background-color: var(--pixel-bg);
+  color: var(--pixel-text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  image-rendering: pixelated;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Pixel Art Container */
+.pixel-container {
+  background-color: var(--pixel-secondary);
+  border: 4px solid var(--pixel-border);
+  box-shadow: 8px 8px 0 var(--pixel-shadow);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Pixel Art Buttons */
+.pixel-btn {
+  font-family: 'Press Start 2P', 'DotGothic16', monospace;
+  background-color: var(--pixel-primary);
+  color: #fff;
+  border: 4px solid #fff;
+  box-shadow: 4px 4px 0 #000;
+  padding: 15px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.1s, box-shadow 0.1s;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+
+.pixel-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #000;
+}
+
+.pixel-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 #000;
+}
+
+/* Pixel Art Inputs */
+.pixel-input {
+  font-family: 'Press Start 2P', 'DotGothic16', monospace;
+  background-color: #000;
+  color: #0f0;
+  border: 4px solid #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.pixel-input:focus {
+  outline: none;
+  border-color: var(--pixel-primary);
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-shadow: 3px 3px 0 var(--pixel-shadow);
+}
+
+.pixel-text-small {
+  font-size: 10px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+/* Stage Master Image Container */
+.stage-master-container {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  background: var(--pixel-bg);
+  border: 4px solid var(--pixel-border);
+  box-shadow: 4px 4px 0 var(--pixel-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stage-master-img {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
