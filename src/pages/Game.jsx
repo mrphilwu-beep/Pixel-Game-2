@@ -110,7 +110,7 @@ function Game() {
         {q.question}
       </h2>
       
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+      <div className="options-grid">
         <button className="pixel-btn" style={getButtonStyle('A')} onClick={() => handleAnswer('A')}>A. {q.A}</button>
         <button className="pixel-btn" style={getButtonStyle('B')} onClick={() => handleAnswer('B')}>B. {q.B}</button>
         <button className="pixel-btn" style={getButtonStyle('C')} onClick={() => handleAnswer('C')}>C. {q.C}</button>
